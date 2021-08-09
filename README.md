@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: []()
-- Live Site URL: []()
+- Solution URL: [Click Here](index.html)
+- Live Site URL: [Click Here](https://lu1z-gust4v0.github.io/Front-End-Mentor-001/)
 
 ## My process
 
