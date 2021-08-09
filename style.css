@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500&display=swap');
+
+/* Css variables */
+
+:root{
+    --primary-light: hsl(225, 100%, 94%);
+    --primary-dark: hsl(245, 75%, 52%);
+
+    --neutral-light: hsl(225, 100%, 98%);
+    --neutral-normal: hsl(224, 23%, 55%);
+    --neutral-dark: hsl(223, 47%, 23%);
+}
+
+/* Reset Default padding and margin defined by the Browser */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Red Hat Display", "sans-serif";
+}
+
+body{
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-color: var(--primary-light);
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+}
+
+div.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* align-items: center; */
+    margin: 1em 2em;
+    background-color: white;
+    height: 600px;
+    width: 400px;
+    border-radius: 1.5em;
+    box-shadow: 0px 10px 30px var(--neutral-normal);
+}
+
+/* Card's Image */
+
+.card img{
+    width: 100%;
+    border-top-left-radius: 1.5em;
+    border-top-right-radius: 1.5em;
+}
+
+/* Card's content */
+
+.card-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5em 1.2em;
+    text-align: center;
+}
+.card-content h2 {
+    margin-bottom: .8em;
+    color: var(--neutral-dark);
+    font-weight: 900;
+}
+
+.card-content p {
+    color: var(--neutral-normal);
+    line-height: 1.5em;
+}
+
+/* Plan container */
+
+.annual-plan{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5em 1.2em;
+    margin: 0em 1.7em;
+    background-color: var(--neutral-light);
+    border-radius: 1em;
+}
+
+.annual-plan div{
+    display: flex;
+    flex-direction: column;
+    margin-right: 2em;
+    color: var(--neutral-dark);
+    font-weight: 900;
+}
+
+.annual-plan div span{
+    color: var(--neutral-normal);
+    font-weight: 400;
+}
+
+.annual-plan img{
+    width: 50px;
+    height: 50px;
+    margin-right: 1em;
+}
+
+/* Buttons */
+
+.card-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2em;
+}
+.card-buttons button {
+    width: 100%;
+    padding: 1em 1.2em;
+    background-color: var(--primary-dark);
+    outline: none;
+    border: none;
+    color: var(--primary-light);
+    font-weight: 700;
+    border-radius: 0.7em;
+    cursor: pointer;
+    box-shadow: 0px 10px 30px var(--neutral-normal);
+}
+
+.card-buttons span{
+    margin-top: 2em;
+    color: var(--neutral-normal);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* Media Query */
+
+@media (max-width: 780px){
+    
+    div.card {
+        width: 300px;
+        height: 500px;
+    }
+    .card-content p {
+        color: var(--neutral-normal);
+        font-size: 0.8rem;
+    }
+    .annual-plan {
+        font-size: 0.8rem;
+    }
+}
+
+/* Default Style */
+
+.attribution { 
+    margin-top: 2em;
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}   
